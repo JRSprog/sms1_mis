@@ -1,0 +1,81 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color:#eef5f9 ;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+    overflow:hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+  }
+
+  .sidebar p :hover {
+    background-color: none;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.4s;
+  }
+  
+  .sidebar :hover {
+    background-color:rgba(242,242,242, .2);
+    margin-left: 15px;
+    border-radius: 5px;
+    width: 210px;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    width: 1530px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: white;
+    color: grey;
+    padding: 20px ;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    margin-left: -22.5px;
+    margin-top: -33px;
+    transition:margin-right .4s;
+    text-align: left;
+    
+  }
+
+  .openbtn :hover {
+    background-color: blue ;
+    border-radius: 25px;
+    width: 15px;
+    margin-left: 100px;
+  }
+  
+  #main {
+    transition: margin-left .4s;
+    padding: 16px;
+  }
+
+  
+  @media screen and (max-height: 1000px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
